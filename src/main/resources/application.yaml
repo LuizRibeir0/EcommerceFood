@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: cardapio
+  datasource:
+    url: 'jdbc:mysql://${MYSQL_HOST:localhost}:3306/cardapio'
+    username: root
+    password: Lui$Jasmim1227
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MariaDBDialect
